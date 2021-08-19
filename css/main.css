@@ -4,7 +4,13 @@ body {
 	padding: 0px;
 }
 p {
-	margin: 0px;
+	margin: 10px;
+	font-size: 18;
+}
+.maincontainer{
+	display: flex;
+	flex-flow: column wrap;
+	min-height: 100vh;
 }
 .header,.footer,.back {
 	color: #336F25;
@@ -25,7 +31,7 @@ p {
 .footer {
 	margin-bottom: 0px;
 }
-.projects {
+.cards {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -34,7 +40,8 @@ p {
 	align-elements: space-evenly;
 }
 .intro {
-	height: 80%;
+	flex-grow: 1;
+	align-items: stretch;
 	margin-top: 0px;
 	background-color: #c4fffa;
 }
@@ -43,14 +50,55 @@ p {
 	padding: 10px;
 	margin: 10px;
 	border-radius: 10px;
+	border-width: 2px;
 	color: #fafbff;
+	flex-basis: 16%;
+	border-style: dashed;
+	border-color: #219ec4;
+	text-decoration: none;
 }
 .card img {
-	margin: 10px;
+	margin-left: 2em;
+	margin-top: 5px;
 	width: 160px;
 	height: 160px;
 	border-radius: 5px;
 }
+.card:hover {
+	background-color: #26b2fe;
+	border-color: #f3f6ff;
+}
 .digits {
 	display: none;
+}
+.contactcard {
+	background-color: #35fe43;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+	border-width: 2px;
+	color: #437754;
+	flex-basis: 10%;
+	border-style: dashed;
+	border-color: #219ec4;
+	text-decoration: none;
+}
+.contactcard:hover {
+	background-color: #358e42;
+	border-color: #f3f6ff;
+}
+.contactcard img {
+	width: 100px;
+	height: 18px;
+	margin-left: 1em;
+	border-radius: 5px;
+}
+.sectionname {
+	background-color: rgba(65, 180, 223, 0.3);
+	padding: 0.5em;
+	margin-top: 10px;
+	width: 95%;
+	border-radius: 0px 10px 10px 0px;
+	font-family: "Lucida Console", "Courier New", monospace;
+	font-size: 24;
 }
