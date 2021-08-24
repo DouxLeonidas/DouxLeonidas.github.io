@@ -1652,6 +1652,10 @@ input, select, textarea {
 			height: 18em;
 			border-radius: 5px 5px 0px 0px;
 			padding: 1px;
+			padding-bottom: 0px;
+			border-width: 1px;
+			border-color: #2B8893;
+			border-bottom-style: solid;
 		}
 
 		.image.left {
@@ -1995,6 +1999,12 @@ input, select, textarea {
 			display: block;
 			margin: 0 0 1.5em 0;
 			cursor: default;
+		}
+
+		.icon.featured.big {
+			font-size: 6em;
+			margin: 0px;
+			margin-bottom: 35px;
 		}
 
 			.icon.featured:before {
